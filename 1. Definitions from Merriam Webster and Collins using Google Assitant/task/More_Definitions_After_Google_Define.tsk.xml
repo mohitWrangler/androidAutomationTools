@@ -1,0 +1,176 @@
+<TaskerData sr="" dvi="1" tv="5.0u5m">
+	<Task sr="task241">
+		<cdate>1496142151718</cdate>
+		<edate>1514137544694</edate>
+		<id>241</id>
+		<nme>More Definitions After Google Define</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%Definition_Speak_Counter</Str>
+			<Str sr="arg1" ve="3">2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Definition_Speak_Counter</lhs>
+					<op>0</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Definition_Speak_Counter</Str>
+			<Str sr="arg1" ve="3">(%Definition_Speak_Counter%3)+1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Speak CollinDef</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Definition_Speak_Counter</Str>
+			<Str sr="arg1" ve="3">(%Definition_Speak_Counter%3)+1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Definitions from Merriam-Webster Website</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>357</code>
+			<Str sr="arg0" ve="3">%Primary_def</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var define_word= global('DefineWord');
+    var url = "https://www.merriam-webster.com/dictionary/"+define_word;
+    var method = "GET" 
+    var xhttp = new XMLHttpRequest();
+    xhttp.open(method, url, false);
+    xhttp.send(); 
+
+
+    if (xhttp.status == 200) { 
+        var definitions_html = xhttp.responseText;
+    }
+
+
+    var definitionsDOMArray = $(definitions_html).find(".tense-box.quick-def-box.simple-def-box.card-box.def-text.another-def ").find(".definition-inner-item");
+    var NoOfDefinitions = definitionsDOMArray.length;
+
+    // here I will show Learners definitions 
+    if (NoOfDefinitions &lt;= 2) {
+        definitionsDOMArray.each(function(index, dom_obj) {
+            // flash(dom_obj.innerText);
+            say (dom_obj.innerText, 'default','default', 'Media', 5,5, true, true );
+        });
+
+    } else {
+
+        for (var i = 0; i &lt; 2; i++) {
+            
+            // flash(definitionsDOMArray[i].innerText);
+           say (definitionsDOMArray[i].innerText, 'default','default', 'Media', 5,5, true, true ); 
+        }
+    }
+
+    
+
+    definitionsDOMArray = $(definitions_html).find(".toggle-box.card-box.def-text.another-def.def-text .dt");
+    NoOfDefinitions = definitionsDOMArray.length;
+    var primaryDefinitions = "";
+    var Primary_def1 = "";
+    var Primary_def2 = "";
+
+    // here I am storing primary defnitions on meriam Webster website
+    if (NoOfDefinitions &lt;= 5) {
+        definitionsDOMArray.each(function(index, dom_obj) {
+
+            switch(index){
+                case 0: setGlobal('Primary_def1', definitionsDOMArray[0].innerText); break;
+                case 1: setGlobal('Primary_def2', definitionsDOMArray[1].innerText); break;
+                case 2: setGlobal('Primary_def3', definitionsDOMArray[2].innerText); break;
+                case 3: setGlobal('Primary_def4', definitionsDOMArray[3].innerText); break;
+                case 4: setGlobal('Primary_def5', definitionsDOMArray[4].innerText); break;
+                default: break;
+            }
+        });
+
+    } else {
+
+        setGlobal('Primary_def1', definitionsDOMArray[0].innerText);
+        setGlobal('Primary_def2', definitionsDOMArray[1].innerText);
+        setGlobal('Primary_def3', definitionsDOMArray[2].innerText);
+        setGlobal('Primary_def4', definitionsDOMArray[3].innerText);
+        setGlobal('Primary_def5', definitionsDOMArray[4].innerText);
+
+    }</Str>
+			<Str sr="arg1" ve="3">/sdcard/Tasker/mj_data/jquery.1.7.2.min.js</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Definition_Speak_Counter</Str>
+			<Str sr="arg1" ve="3">(%Definition_Speak_Counter%3)+1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Definition_Speak_Counter</lhs>
+					<op>0</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%def</Str>
+			<Str sr="arg1" ve="3">%Primary_def()</Str>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">%def</Str>
+			<Str sr="arg1" ve="3">default:default</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>40</code>
+		</Action>
+	</Task>
+</TaskerData>

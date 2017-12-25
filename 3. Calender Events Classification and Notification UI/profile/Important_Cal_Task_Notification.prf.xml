@@ -1,0 +1,227 @@
+<TaskerData sr="" dvi="1" tv="5.0u5m">
+	<Profile sr="prof168" ve="2">
+		<cdate>1487828456606</cdate>
+		<edate>1514137403386</edate>
+		<id>168</id>
+		<mid0>182</mid0>
+		<nme>Important Cal Task Notification</nme>
+		<pri>50</pri>
+		<Event sr="con0" ve="2">
+			<code>1520257414</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AllFields>false</AllFields>
+					<AllFields-type>java.lang.Boolean</AllFields-type>
+					<App>&lt;null&gt;</App>
+					<App-type>java.lang.String</App-type>
+					<BigImageNames>&lt;null&gt;</BigImageNames>
+					<BigImageNames-type>java.lang.String</BigImageNames-type>
+					<BigTextNames>&lt;null&gt;</BigTextNames>
+					<BigTextNames-type>java.lang.String</BigTextNames-type>
+					<CaseinsensitiveApp>false</CaseinsensitiveApp>
+					<CaseinsensitiveApp-type>java.lang.Boolean</CaseinsensitiveApp-type>
+					<CaseinsensitivePackage>false</CaseinsensitivePackage>
+					<CaseinsensitivePackage-type>java.lang.Boolean</CaseinsensitivePackage-type>
+					<CaseinsensitiveText>false</CaseinsensitiveText>
+					<CaseinsensitiveText-type>java.lang.Boolean</CaseinsensitiveText-type>
+					<CaseinsensitiveTitle>false</CaseinsensitiveTitle>
+					<CaseinsensitiveTitle-type>java.lang.Boolean</CaseinsensitiveTitle-type>
+					<ExactApp>false</ExactApp>
+					<ExactApp-type>java.lang.Boolean</ExactApp-type>
+					<ExactPackage>false</ExactPackage>
+					<ExactPackage-type>java.lang.Boolean</ExactPackage-type>
+					<ExactText>false</ExactText>
+					<ExactText-type>java.lang.Boolean</ExactText-type>
+					<ExactTitle>false</ExactTitle>
+					<ExactTitle-type>java.lang.Boolean</ExactTitle-type>
+					<HasReplyAction>false</HasReplyAction>
+					<HasReplyAction-type>java.lang.Boolean</HasReplyAction-type>
+					<Id>&lt;null&gt;</Id>
+					<Id-type>java.lang.String</Id-type>
+					<ImageNames>&lt;null&gt;</ImageNames>
+					<ImageNames-type>java.lang.String</ImageNames-type>
+					<InterceptApps>&lt;StringArray sr=""&gt;&lt;_array_InterceptApps0&gt;com.android.calendar&lt;/_array_InterceptApps0&gt;&lt;_array_InterceptApps1&gt;com.sec.android.widgetapp.SPlannerAppWidget&lt;/_array_InterceptApps1&gt;&lt;/StringArray&gt;</InterceptApps>
+					<InterceptApps-type>[Ljava.lang.String;</InterceptApps-type>
+					<InterceptPersistent>&lt;null&gt;</InterceptPersistent>
+					<InterceptPersistent-type>java.lang.String</InterceptPersistent-type>
+					<InvertApp>false</InvertApp>
+					<InvertApp-type>java.lang.Boolean</InvertApp-type>
+					<InvertPackage>false</InvertPackage>
+					<InvertPackage-type>java.lang.Boolean</InvertPackage-type>
+					<InvertText>false</InvertText>
+					<InvertText-type>java.lang.Boolean</InvertText-type>
+					<InvertTitle>false</InvertTitle>
+					<InvertTitle-type>java.lang.Boolean</InvertTitle-type>
+					<PackageName>&lt;null&gt;</PackageName>
+					<PackageName-type>java.lang.String</PackageName-type>
+					<RegexApp>false</RegexApp>
+					<RegexApp-type>java.lang.Boolean</RegexApp-type>
+					<RegexPackage>false</RegexPackage>
+					<RegexPackage-type>java.lang.Boolean</RegexPackage-type>
+					<RegexText>false</RegexText>
+					<RegexText-type>java.lang.Boolean</RegexText-type>
+					<RegexTitle>false</RegexTitle>
+					<RegexTitle-type>java.lang.Boolean</RegexTitle-type>
+					<Text>&lt;null&gt;</Text>
+					<Text-type>java.lang.String</Text-type>
+					<TextNames>&lt;null&gt;</TextNames>
+					<TextNames-type>java.lang.String</TextNames-type>
+					<Title></Title>
+					<Title-type>java.lang.String</Title-type>
+					<Type>0</Type>
+					<Type-type>java.lang.String</Type-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Event Behaviour: true
+Notification Type: Only Created Notifications
+Notification Apps: S Planner,S Planner</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>InterceptApps Type plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>fd3f7a6f-1aab-438c-b112-e58a4d8ed9e7</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autonotification.intent.IntentInterceptNotificationEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autonotification</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autonotification.activity.ActivityConfigNotificationInterceptTaskerEvent</Str>
+		</Event>
+	</Profile>
+	<Task sr="task182">
+		<cdate>1497336969458</cdate>
+		<edate>1514137403386</edate>
+		<id>182</id>
+		<nme>Important Cal Task Controller (JS)</nme>
+		<pri>51</pri>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%antitle</Str>
+			<Str sr="arg1" ve="3">Buy milk and its important </Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%antitle</Str>
+			<Str sr="arg1" ve="3">Give back Chachaji stamp pad at 8:30 a.m and it's very important</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%check_index</Str>
+			<Str sr="arg1" ve="3">((%Task_Counter+1)%3) +1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%last_task_text</Str>
+			<Str sr="arg1" ve="3">%Task_Text(%check_index)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">//var antitle = "Buy milk and it's important"
+ var speak = true;
+ var speak_more = false;
+ var show_scene = false;
+
+ //flash(global('Task_Counter'));
+
+ if (antitle.match(/and do(n't| not) speak it */gi) != null) {
+     speak = false;
+     antitle = antitle.replace(/and do(n't| not) speak it */gi, "");
+ }
+
+
+ if (antitle.match(/ and it(s|'s| is) important */gi) != null) {
+     show_scene = true;
+     antitle = antitle.replace(/ and it(s|'s| is) important */gi, "");
+
+ }
+
+ if (antitle.match(/ and it(s|'s| is) very important */gi) != null) {
+     show_scene = true;
+     speak_more = true;
+     antitle = antitle.replace(/ and it(s|'s| is) very important */gi, "");
+
+ }
+
+antitle = antitle.trim();
+
+
+ switch (global('Task_Counter')) {
+     case '1':
+         setGlobal('Task_Text1', antitle);
+         break;
+     case '2':
+         setGlobal('Task_Text2', antitle);
+         break;
+     case '3':
+         setGlobal('Task_Text3', antitle);
+         break;
+     default:
+         break;
+ }
+
+
+ if (show_scene) {
+
+     var sn = "Important Task Short " + global('Task_Counter');
+     var index = global('Task_Counter') - 1;
+     var vertical_position = -60 + (index * 10);
+     var ok = showScene(sn, "OverBlocking", -100, vertical_position, false, false);
+    setGlobal('Task_Counter', ( global('Task_Counter') % 3) + 1);
+
+ }
+
+ if (speak) {
+     say(antitle, 'default', 'default', 'Media', 5, 5, true, true);
+ }
+
+ if (speak_more) {
+
+     showScene('Stop Imp Cal Task Speak', "OverBlocking", -95, 95, false, false);
+     performTask('Speak Very Important Calender Task', priority, antitle);
+ }</Str>
+			<Str sr="arg1" ve="3">/sdcard/Tasker/mj_data/jquery.1.7.2.min.js</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%antitle</lhs>
+					<op>5</op>
+					<rhs>%last_task_text.*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%last_task_text</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%antitle</lhs>
+					<op>4</op>
+					<rhs>%last_task_text.*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>

@@ -1,0 +1,75 @@
+<TaskerData sr="" dvi="1" tv="5.0u5m">
+	<dmetric>1440.0,2560.0</dmetric>
+	<Scene sr="sceneImportant Task Long 3">
+		<cdate>1487686126008</cdate>
+		<edate>1497337484586</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>126</heightPort>
+		<nme>Important Task Long 3</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1232</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>1,0,1231,125,0,0,598,175</geom>
+			<longclickTask>154</longclickTask>
+			<strokeTask>156</strokeTask>
+			<Str sr="arg0" ve="3">Task Text</Str>
+			<Str sr="arg1" ve="3">%Task_Text(3)</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#FF9A1C1C</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+			<StrokeFilter sr="filter2">
+				<dir>Left</dir>
+			</StrokeFilter>
+		</TextElement>
+	</Scene>
+	<Task sr="task154">
+		<cdate>1487686349059</cdate>
+		<edate>1487686349059</edate>
+		<id>154</id>
+		<pri>59</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Important Task Long 3</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Task_Text(3)</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task156">
+		<cdate>1487691606994</cdate>
+		<edate>1487691606994</edate>
+		<id>156</id>
+		<pri>30</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Important Task Long 3</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var ok = showScene( "Important Task Short 3", "OverBlocking", -100, -40, false, false )</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+	</Task>
+</TaskerData>

@@ -1,0 +1,132 @@
+<TaskerData sr="" dvi="1" tv="5.0u5m">
+	<Task sr="task235">
+		<cdate>1496130304891</cdate>
+		<edate>1514066501712</edate>
+		<id>235</id>
+		<nme>BBC News Radio</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">flashLong("Pulling news from BBC. It may take a few minutes.");
+var url = "http://www.bbc.com/news/world";
+
+var method = "GET" // or "POST"/"PUT"/"DELETE"
+var xhttp = new XMLHttpRequest();
+xhttp.open(method, url, false);
+xhttp.send(); //if method was "POST", put info in the () here
+
+
+if (xhttp.status == 200) { //successful http request
+    var bbc_india_html = xhttp.responseText;
+}
+
+
+var links = [];
+
+links.push($(bbc_india_html).find(".buzzard-item .title-link").attr("href"));
+
+$(bbc_india_html).find("[data-entityid*='top_stories'] .title-link").slice(0, 4).each(function(index, dom_obj) {
+
+    str = $(dom_obj).attr("href");
+    links.push(str);
+});
+
+url = "http://www.bbc.com/news/world/asia/india";
+method = "GET" // or "POST"/"PUT"/"DELETE"
+xhttp = new XMLHttpRequest();
+xhttp.open(method, url, false);
+xhttp.send(); //if method was "POST", put info in the () here
+
+
+if (xhttp.status == 200) { //successful http request
+    var bbc_world_html = xhttp.responseText;
+}
+
+links.push($(bbc_world_html).find(".buzzard-item .title-link").attr("href"));
+
+$(bbc_world_html).find("[data-entityid*='top_stories'] .title-link").slice(0, 4).each(function(index, dom_obj) {
+
+    str = $(dom_obj).attr("href");
+    links.push(str);
+});
+
+
+// &lt;&lt;&lt;&lt;----3. FILTER OR MANIPULATE EXTRACTED DATA-------------------------------------------------------------------
+
+// for loop in Javascript
+// here i is an index
+for (var i in links) {
+
+    // match() function match with specified pattern
+    //           returns null when there is not match
+    //                   otherwise macthed data 
+    // test you regex here  https://regex101.com/
+    //       choose javascript on left panel  
+
+
+    if (links[i].match(/\/sport\/.*/g) != null) {
+
+        delete links[i]; // removes array item
+    } else {
+        links[i] = "http://www.bbc.com" + links[i]
+
+    }
+}
+
+// Rest is pretty much repeatative for particular use
+// See some tasker functions a little more ahead in the code 
+
+var titles = [];
+var short_intros = [];
+
+for (var i in links) {
+
+    url = links[i];
+    var xhttp2 = new XMLHttpRequest();
+    xhttp2.open(method, url, false);
+    xhttp2.send();
+
+
+    if (xhttp2.status == 200) { //successful http request  
+        var news_page_html = xhttp2.responseText;
+    }
+
+
+    var title = $(news_page_html).find(".story-body__h1").text();
+    var short_intro = $(news_page_html).find(".story-body__introduction").text();
+
+
+    titles.push(title);
+    short_intros.push(short_intro);
+
+}
+
+
+say('Top Headlines from BBC.', 'default', 'default', 'Media', 5, 5, true, true);
+
+for (var i in titles) {
+
+    say(titles[i], 'default', 'default', 'Media', 5, 5, true, true);
+}
+
+say('Here it goes in breif.', 'default', 'default', 'Media', 5, 5, true, true);
+
+
+wait(2000);
+for (var i in short_intros) {
+
+    say(short_intros[i], 'default', 'default', 'Media', 5, 5, true, true);
+}
+
+say('That\'s all for now. Have a nice day.', 'default', 'default', 'Media', 5, 5, true, true);</Str>
+			<Str sr="arg1" ve="3">/sdcard/Tasker/mj_data/jquery.1.7.2.min.js</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3">
+				<var>300</var>
+			</Int>
+		</Action>
+		<Img sr="icn" ve="2">
+			<fle>/storage/emulated/0/Tasker/.icn/Mj_icons/BBC News.png</fle>
+		</Img>
+	</Task>
+</TaskerData>

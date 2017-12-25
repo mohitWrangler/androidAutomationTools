@@ -1,0 +1,69 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<dmetric>1440.0,2560.0</dmetric>
+	<Scene sr="sceneImportant Task Long">
+		<cdate>1487686126008</cdate>
+		<edate>1487741617927</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>176</heightPort>
+		<nme>Important Task Long</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>599</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>0,0,598,175,0,0,598,175</geom>
+			<longclickTask>151</longclickTask>
+			<strokeTask>154</strokeTask>
+			<Str sr="arg0" ve="3">Task Text</Str>
+			<Str sr="arg1" ve="3">Task test</Str>
+			<Int sr="arg2" val="27"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#FF9A1C1C</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+			<StrokeFilter sr="filter2">
+				<dir>Left</dir>
+			</StrokeFilter>
+		</TextElement>
+	</Scene>
+	<Task sr="task151">
+		<cdate>1487686349059</cdate>
+		<edate>1487686349059</edate>
+		<id>151</id>
+		<pri>148</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Important Task Long</Str>
+		</Action>
+	</Task>
+	<Task sr="task154">
+		<cdate>1487691606994</cdate>
+		<edate>1487691606994</edate>
+		<id>154</id>
+		<pri>140</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Important Task Long</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var ok = showScene( "Important Task Short", "OverBlocking", -100, -60, false, true )</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+	</Task>
+</TaskerData>
