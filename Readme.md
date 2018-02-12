@@ -1,8 +1,17 @@
 Android Automation Tools
 ==========================
 
-I like to automate stuff that I use very often in computers, phones and daily life. Sometimes, I automate to make a routine convenient. Here are some of the tools that I have developed using [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en), [Autoapps](https://play.google.com/store/apps/details?id=com.joaomgcd.autoappshub&hl=en) and [IFTTT](ifttt.com).       
+I like to automate stuff that I use often in computers, phones, and daily life. Sometimes, I automate in order to make a routine convenient. For example, while preparing for GRE exam I needed thorough definitions for certain English words. Now Instead of looking for a word in various dictionaries online, Isn't it convenient if Google Assitant on your phone can fetch definitions from required dictionaries (Collins and Merriam Webster) and speak back to you?  
+I have developed these tools using [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en), [Autoapps](https://play.google.com/store/apps/details?id=com.joaomgcd.autoappshub&hl=en) and [IFTTT](ifttt.com).
+  
 
+How To Install
+----------------
+1. Install [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en) app from Google play store.
+2. Navigate to desired tool directory in my repsoitory and import files present in profile, task and scenes folders, whichever is applicable, and you are all set!   
+
+Tools Description
+----------------
 
 ## 1. Definitions from Merriam Webster and Collins using Google Assistant
 The tool gives better and comprehensive definitions of English words from multiple dictionaries ([Collins](https://www.collinsdictionary.com/), [Merriam-Webster](https://www.merriam-webster.com/)) using [Google Assistant](https://play.google.com/store/apps/details?id=com.google.android.apps.googleassistant&hl=en). I developed this tool during GRE exam preparation for obvious reasons. This is built on top of an earlier version which I developed to get an intuitive word's definitions from my favorite dictionary (Collins Advanced Learner's Dictionary) while reading magazines (Reader's Digest, National Geographic, Creative Gaga etc). All I had to do was to dictate right commands to Google Assistant.  Here is a demo:
@@ -13,9 +22,7 @@ The tool gives better and comprehensive definitions of English words from multip
 
 
 ## 2. Custom News Radio
-I developed this tool to listen to a customized news from a news website I trust. The tool speaks top five news from Worlds and India, Also it omits sports news. (I like to play sports more than following.)
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=-ucS2w9voHg" target="_blank"><img src="http://img.youtube.com/vi/-ucS2w9voHg/0.jpg" alt="Custom News Radio" width="480" height="360" border="10" /></a>
+I developed this tool to listen to a customized news from a news website I trust. The tool speaks top five news from Worlds and India, Also it omits sports news. (I like to play sports more than following.) You can customize the news to suit your needs. 
 
 **How it works:** The automation scripts pull top headlines and a brief overview from BBC website for specific geographies and speaks back to the user.
 
@@ -23,8 +30,8 @@ I developed this tool to listen to a customized news from a news website I trust
 ## 3. Calendar Events Classification and Custom Notification UI
 I set up my to-do list using Google Calendar. I wished to have a classification of 'critical', 'important' and 'flexible' to-do items. Also, I wished to have the notification to reflect the importance of the task as desired. Further, Isn't it cool to have the phone to speak up the to-do item when you are away from the phone?  
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=d1S5nuDJVrA" target="_blank"><img src="http://img.youtube.com/vi/d1S5nuDJVrA/0.jpg" 
-alt="Calendar Events Classification and Custom Notification UI" width="480" height="360" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=-ucS2w9voHg" target="_blank"><img src="http://img.youtube.com/vi/-ucS2w9voHg/0.jpg" alt="Calendar Events Classification and Custom Notification UI" width="480" height="360" border="10" /></a>
+
 
 **How it works:** The automation intercepts calender notification in Android and based on the content the event title, the task is spoken to the user. The content can be specified to assert the importance of the task and specify whether to speak or not to speak the task.
 
